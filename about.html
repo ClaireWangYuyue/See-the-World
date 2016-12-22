@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About - See the World</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+     <script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+    <script>
+        var soundID = "broadness";
+
+        function loadSound () {
+            createjs.Sound.registerSound("audio/suzhongqing.mp3", soundID);
+        }
+
+        function playSound () {
+            createjs.Sound.play(soundID);
+        }
+
+        function stopSound(){
+            createjs.Sound.stop(soundID);
+        }
+        </script>
+</head>
+
+<body onload="loadSound();">
+    <span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+    </span>
+     <div class="btn-group-vertical" role="group" aria-label="..." id="action_list">
+        <button type="button" class="btn btn-default" id="claire_action"><a href="action.html">Join us</a></button>
+        <button type="button" class="btn btn-default" id="claire_action"><a href="donate.html">Donate</a></button>
+        <button type="button" class="btn btn-default" id="claire_action"><a href="signup.html">Sign Up</a></button>
+        <button onclick="playSound();" class="playSound">Play Music</button>
+        <button onclick="stopSound();" class="stopSound">stop Music</button>
+    </div>
+    <div class="brand">See the World</div>
+    <div class="address-bar">140 E.14th Street | New York, NY 10003 | 718.801.0684</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">See the World</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">About
+                        <strong>See the World</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-6.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p>We will be building shelters/hotels as "specialized home"in everywhere around the world, starting from those famous attractions that you want to visit. You can get <strong>cheap</strong> but <strong>cozy</strong> accomodations in our "home" and travel experiences from other folks who loves travel just like you.</p>
+                    <p>We basically provide you with everything you need to explore the spot, ranging from maps and bicycles to car rentals and accompany photographers(think of getting beautiful pictures of yourself taken in those extraordinary sceneries!!)</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Our
+                        <strong>Team</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="https://www.douban.com/people/s32047/" title="Go to Shine's Douban!"><img class="img-responsive" src="img/shine.jpg" alt="" width="750px" height="450px"></a>
+                    <h3>Shine Zhou
+                        <small>Youtuber</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="https://www.facebook.com/lixiangci?fref=ts" title="Go to Big Hammer's Facebook"><img class="img-responsive" src="img/hammer.jpg" alt="" width="750px" height="450px"></a>
+                    <h3>Big Hammer
+                        <small>Engineer</small>
+                    </h3>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="http://weibo.com/1092308533/profile?topnav=1&wvr=6" title="Go to Claire's Weibo"><img class="img-responsive" src="img/claire.jpg" alt="" width="750px" height="450px"></a>
+                    <h3>Claire
+                        <small>Boss</small>
+                    </h3>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Yuyue Wang 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

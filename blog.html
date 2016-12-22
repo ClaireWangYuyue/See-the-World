@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog - See the World</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/soundjs-0.6.2.min.js"></script>
+    <script>
+        var soundID = "broadness";
+
+        function loadSound () {
+            createjs.Sound.registerSound("audio/miss.mp3", soundID);
+        }
+
+        function playSound () {
+            createjs.Sound.play(soundID);
+        }
+
+        function stopSound(){
+            createjs.Sound.stop(soundID);
+        }
+        </script>
+</head>
+
+<body onload="loadSound();">
+    <span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm"  onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+    </span>
+     <div class="btn-group-vertical" role="group" aria-label="..." id="action_list">
+    <button type="button" class="btn btn-default" id="claire_action"><a href="action.html">Join us</a></button>
+    <button type="button" class="btn btn-default" id="claire_action"><a href="donate.html #donate">Donate</a></button>
+    <button type="button" class="btn btn-default" id="claire_action"><a href="signup.html">Sign Up</a></button>
+    <button onclick="playSound();" class="playSound">Play Music</button>
+    <button onclick="stopSound();" class="stopSound">stop Music</button>
+    </div>
+    <!--<a href="#claire_top" class="btn btn-info btn-lg" id="back_to_top">
+          <span class="glyphicon glyphicon-arrow-up"></span> Up
+        </a>-->
+    <div class="brand" id="claire_top">See the World</div>
+    <div class="address-bar">140 E.14th Street | New York, NY 10003 | 718.801.0684</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">See the World</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+     <div class="btn-group-vertical" role="group" aria-label="..." id="blog_guide">
+        <button type="button" class="btn btn-default"><a href="#bahamas">The Bahamas</a></button>
+        <button type="button" class="btn btn-default"><a href="#washington">Washington D.C, US</a></button>
+       <button type="button" class="btn btn-default"> <a href="#phuket">Phuket, Thailand</a></button>
+       <button type="button" class="btn btn-default"> <a href="#Nanjing">Nanjing, China</a></button>
+    </div>
+    <div class="container">  
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">Company
+                        <strong>blog</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/blog1.jpg" alt="" id="bahamas">
+                    </div>
+                    <div class="col-md-6">
+                    <h2>Meet the paradise
+                        <br>
+                        <small>January, 2016</small>
+                    </h2>
+                    <p>I know I have talked about this so many times, but it's no doubt my first recommendation and my favorite!! THE PINK SAND beach!!! Trust me, You will definitely love it because it IS the PARADISE. Click "Read More" below. It's the BEST!</p>
+                    <a href="blog/blog1.html" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-12 text-center">
+                     <div class="col-md-6">
+                    <h2 id="washington">Washington-US discovery
+                        <br>
+                        <small>May, 2016</small>
+                    </h2>
+                    <p>I believe Washington is when I feel the US is a developed country<img src="img/emoji.PNG">. The city is so clean and peaceful(feel like it). It's quiet and not crowded. I love the subway in Washington too. The only thing that bothers me is that few shops/restaurants is open on weekend. Generally, it's a citys where you can experience development haha!</p>
+                    <a href="blog/blog2.html" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                    </div>
+                    <div class="col-md-6">
+                    <img class="img-responsive img-border-right" src="img/slide-3.jpg" alt="">
+                    </div>
+                   
+                </div>
+                <div class="col-lg-12 text-center">
+                    <div class="col-md-6">
+                    <img class="img-responsive img-border-left" src="img/slide-7.jpg" alt="" id="phuket">
+                    </div>
+                    <div class="col-md-6">
+                    <h2>Feel Phuket
+                        <br>
+                        <small>December, 2015</small>
+                    </h2>
+                    <p>Thailand!Thailand! Wanna drink fresh-made mango shake everyday? Wanna enjoy the nightlife on the beach? Wanna experience the charm of southeastern Asia? PHUKET ISLAND is your first choice. (Why do I look like a salesperson) Anyway, Phuket Island is a wonderful place to travel with your buddies, and please yourself.</p>
+                    <a href="blog/blog3.html" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                    </div>
+                </div>
+                 <div class="col-lg-12 text-center">
+                     <div class="col-md-6">
+                    <h2 id="Nanjing">Nanjing-History Story
+                        <br>
+                        <small>March, 2016</small>
+                    </h2>
+                    <p>You can smell history in this city. It was China's capital in six dynasties, enriched with the trace of ancient China and contemporary China. Sun Yat-sen Mausoleum, Former site of Republic of China, etc. </p>
+                    <p>There are many enjoyable hot prings around Nanjing main city, within several hours' drive. Relax your body for your new journey.</p>
+                    <a href="blog/blog4.html" class="btn btn-default btn-lg">Read More</a>
+                    <hr>
+                    </div>
+                    <div class="col-md-6">
+                    <img class="img-responsive img-border-right" src="img/blog4.jpg" alt="">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+       
+        <!--<a href="#claire_top"><div class="glyphicon glyphicon-arrow-up" id="back_to_top"></div></a>!-->
+    </div>
+    <!-- /.container -->
+     
+    <footer >
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Yuyue Wang 2016</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
